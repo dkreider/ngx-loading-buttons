@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-loading-buttons-playground';
+  loading = false;
+
+  click(): void {
+    this.loading = true;
+  }
 }
