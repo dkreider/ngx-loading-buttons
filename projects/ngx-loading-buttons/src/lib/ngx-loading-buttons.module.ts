@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
-import { NgxLoadingButtonsComponent } from './ngx-loading-buttons.component';
-
-
+import { SpinnerDirective } from './spinner.directive';
 
 @NgModule({
   declarations: [
-    NgxLoadingButtonsComponent
-  ],
-  imports: [
+    SpinnerDirective
   ],
   exports: [
-    NgxLoadingButtonsComponent
+    SpinnerDirective
   ]
 })
 export class NgxLoadingButtonsModule { }
