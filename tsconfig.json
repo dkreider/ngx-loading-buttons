@@ -11,6 +11,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ngx-loading-buttons": [
+        "dist/ngx-loading-buttons/ngx-loading-buttons",
+        "dist/ngx-loading-buttons"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
