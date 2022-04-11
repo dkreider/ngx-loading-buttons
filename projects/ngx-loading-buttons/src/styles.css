@@ -1,8 +1,8 @@
-@keyframes spinner {
+@keyframes mat-spinner {
     to {transform: rotate(360deg);}
 }
 
-.spinner:before {
+.mat-spinner:before {
     content: '';
     box-sizing: border-box;
     position: absolute;
@@ -15,5 +15,9 @@
     border-radius: 50%;
     border: 2px solid #ffffff;
     border-top-color: #000000;
-    animation: spinner .8s linear infinite;
+    animation: mat-spinner .8s linear infinite;
+}
+
+.hide-btn-text {
+    font-size: 0em;
 }
