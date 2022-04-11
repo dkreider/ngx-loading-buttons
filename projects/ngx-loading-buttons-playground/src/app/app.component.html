@@ -30,6 +30,10 @@
     margin: 0;
   }
 
+  button {
+    margin-bottom: 20px;
+  }
+
   .spacer {
     flex: 1;
   }
@@ -326,5 +330,6 @@
 </div>
 
 <div class="content" role="main">
-    <button mat-button [mtBasicSpinner]="loading" (click)="this.click()">Basic</button>
+    <button mat-button [mtBasicSpinner]="loading" [hideText]="false" (click)="this.click()" id="spinnerWithText">Basic</button>
+    <button mat-button [mtBasicSpinner]="loading" [hideText]="true" (click)="this.click()" id="spinnerWithoutText">Basic</button>
 </div>
