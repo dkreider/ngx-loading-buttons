@@ -41,4 +41,4 @@ jobs:
         run: npm run test
 
       - name: Build library
-        run: build:ngx-loading-buttons
+        run: npm run build:ngx-loading-buttons
