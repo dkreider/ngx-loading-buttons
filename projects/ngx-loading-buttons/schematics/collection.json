@@ -7,7 +7,6 @@
       },
       "setup-css": {
         "description": "Installs the CSS file after the ng-add dependencies have been installed.",
-
         "factory": "./ng-add/setup#cssAdd"
       }
     }
