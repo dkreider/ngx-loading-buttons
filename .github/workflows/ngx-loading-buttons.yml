@@ -1,0 +1,44 @@
+name: 'ngx-loading-buttons'
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    strategy:
+      fail-fast: true
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        id: npm-cache
+        with:
+          # We also specify `~/.cache` because Cypress binary is installed
+          # in that location.
+          path: |
+            node_modules
+            ~/.cache
+          key: ${{ runner.os }}-v1-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: ${{ runner.os }}-v1-npm
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.15
+
+      - name: Install dependencies
+        # If checksum for the `package-lock.json` hasn't changed then we shouldn't run
+        # `npm ci` because it will hit the `postinstall` hook
+        # that will run `ngcc` compiler accordingly.
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+        run: npm ci
+        
+      - name: Test library
+        run: npm run test
+
+      - name: Build library
+        run: build:ngx-loading-buttons
