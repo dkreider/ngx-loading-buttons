@@ -11,5 +11,6 @@ export class AppComponent {
 
   click(): void {
     this.loading = true;
+    setTimeout(() => this.loading = false, 3000);
   }
 }
