@@ -4,7 +4,7 @@
 
 <br />
 
-[![ngx-loading-buttons](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/ngx-loading-buttons.yml/badge.svg)](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/ngx-loading-buttons.yml)
+[![ngx-loading-buttons](https://github.com/dkreider/ngx-loading-buttons/workflows/ngx-loading-buttons/badge.svg)](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/main.yml)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
