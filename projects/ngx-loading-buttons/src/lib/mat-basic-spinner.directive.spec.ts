@@ -21,7 +21,7 @@ describe('MatBasicSpinnerDirective', () => {
   });
 
   it('should show spinner and text when loading is true', () => {
-    fixture.componentInstance.loading = true;
+    fixture.componentInstance.saving = true;
     fixture.detectChanges();
 
     var element: HTMLElement = fixture.nativeElement.querySelector("#spinnerWithText");
@@ -29,7 +29,7 @@ describe('MatBasicSpinnerDirective', () => {
   });
 
   it('should show spinner and hide text when loading is true', () => {
-    fixture.componentInstance.loading = true;
+    fixture.componentInstance.saving = true;
     fixture.detectChanges();
 
     var element: HTMLElement = fixture.nativeElement.querySelector("#spinnerWithoutText");

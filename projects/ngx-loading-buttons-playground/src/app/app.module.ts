@@ -5,6 +5,7 @@ import { NgxLoadingButtonsModule } from 'ngx-loading-buttons';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     NgxLoadingButtonsModule,
     MatButtonModule,
+    MatDividerModule,
     BrowserAnimationsModule
   ],
   providers: [],

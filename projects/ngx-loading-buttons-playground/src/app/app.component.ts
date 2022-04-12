@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngx-loading-buttons-playground';
-  loading = false;
+  saving = false;
 
   click(): void {
-    this.loading = true;
-    setTimeout(() => this.loading = false, 3000);
+    this.saving = true;
+    setTimeout(() => this.saving = false, 3000);
   }
 }
