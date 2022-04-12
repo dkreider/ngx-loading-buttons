@@ -1,27 +1,118 @@
-# NgxLoadingButtons
+<p align="center">
+ <img width="20%" height="20%" src="./logo.png">
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+<br />
 
-## Development server
+[![ngx-loading-buttons](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/ngx-loading-buttons.yml/badge.svg)](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/ngx-loading-buttons.yml)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+A lightweight Angular library to add a loading spinner to your [Angular Material](https://material.angular.io) buttons. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="./example.gif">
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+```
+ng add ngx-loading-buttons
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+Import the `NgxPagememoryModule` into your `AppModule`. You can configure it as shown below:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxLoadingButtonsModule } from 'ngx-loading-buttons';
 
-## Further help
+import { AppComponent } from './app.component';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@NgModule({
+  declarations: [
+    AppComponent    
+  ],
+  imports: [
+    BrowserModule,
+    NgxLoadingButtonsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
+And last of all, add it to your `<button>` element like this.
+
+```html
+<button mat-raised-button [mtBasicSpinner]="true">Basic</button>
+```
+
+You can also hide the button's text like this.
+
+```html
+<button mat-raised-button [mtBasicSpinner]="true" [hideText]="true">Basic</button>
+```
+
+A "real-world component" would likely look like this.
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  saving: boolean = false;
+
+  save(): void {
+    this.saving = true;
+    // Juggle 5 hens while wiggling your toes and other magic...
+  }
+
+
+}
+```
+
+And our template file.
+
+```html
+<button mat-raised-button [mtBasicSpinner]="saving" (click)="save()">Basic</button>
+```
+
+## Issues 🐛
+
+Found a bug? Want to request a feature? Confused? Or wanna simply comment on how useful this library is? 
+
+Open an issue [here](https://github.com/dkreider/ngx-loading-buttons/issues).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=dkreider" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
+
+Contributions of any kind welcome!
+
+## Credits
+- <a href="https://www.flaticon.com/free-icons/fidget-spinner" title="fidget-spinner icons">Fidget-spinner icons created by Smashicons - Flaticon</a>
