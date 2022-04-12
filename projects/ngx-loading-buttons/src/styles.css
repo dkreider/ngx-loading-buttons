@@ -19,5 +19,5 @@
 }
 
 .hide-btn-text {
-    font-size: 0em;
+    color: transparent !important;
 }
