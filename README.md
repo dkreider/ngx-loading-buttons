@@ -1,5 +1,5 @@
 <p align="center">
- <img width="20%" height="20%" src="./logo.png">
+ <img width="20%" height="20%" src="https://raw.githubusercontent.com/dkreider/ngx-loading-buttons/main/logo.png">
 </p>
 
 <br />
@@ -11,7 +11,7 @@
 
 A lightweight Angular library to add a loading spinner to your [Angular Material](https://material.angular.io) buttons. 
 
-<img src="./example.gif">
+<img src="https://raw.githubusercontent.com/dkreider/ngx-loading-buttons/main/example.gif">
 
 
 ### Installation
