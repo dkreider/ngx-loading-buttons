@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ngx-loading-buttons-playground';
   saving = false;
+  color = "blue";
 
   click(): void {
     this.saving = true;

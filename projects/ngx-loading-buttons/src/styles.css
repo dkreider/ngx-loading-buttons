@@ -1,3 +1,7 @@
+:root {
+    --glow-color: #3072bd;
+}
+
 @keyframes mat-spinner {
     to {transform: rotate(360deg);}
 }
@@ -20,4 +24,17 @@
 
 .hide-btn-text {
     color: transparent !important;
+}
+
+.mat-glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 3px -3px var(--glow-color);
+    }
+    to {
+        box-shadow: 0 0 3px 3px var(--glow-color);
+    }
 }

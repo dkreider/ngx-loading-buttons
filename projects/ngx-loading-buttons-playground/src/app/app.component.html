@@ -247,15 +247,24 @@
 </div>
 
 <div class="content" role="main">
-  <h2>Spinner Buttons</h2>
+  <h2>ngx-loader-spinners</h2>
 
   <section>
-    <div class="example-label">Raised</div>
+    <div class="example-label">Spinner</div>
     <div class="example-button-row">
-      <button id="spinnerWithoutText" mat-raised-button [hideText]="true" (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Basic</button>
-      <button id="spinnerWithText" mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Primary</button>
-      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="accent">Accent</button>
-      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="warn">Warn</button>
+      <button id="spinnerWithoutText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Button</button>
+      <button id="spinnerWithText" mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
+      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" color="secondary" [hideText]="true">Button</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Glow</div>
+    <div class="example-button-row">
+      <button id="glowWithoutText" mat-button (click)="this.click()" [mtGlow]="saving" [hideText]="true" [glowColor]="color">Button</button>
+      <button id="glowWithText" mat-raised-button (click)="this.click()" [mtGlow]="saving" color="primary" [glowColor]="color">Button</button>
+      <button mat-stroked-button (click)="this.click()" [mtGlow]="saving" [hideText]="true" color="secondary" [glowColor]="color">Button</button>
     </div>
   </section>
   <mat-divider></mat-divider>

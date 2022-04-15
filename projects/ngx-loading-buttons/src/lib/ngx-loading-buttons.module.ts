@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { MatBasicSpinnerDirective } from './mat-basic-spinner.directive';
+import { MatGlowDirective } from './mat-glow/mat-glow.directive';
 
 @NgModule({
   declarations: [
-    MatBasicSpinnerDirective
+    MatBasicSpinnerDirective,
+    MatGlowDirective
   ],
   exports: [
-    MatBasicSpinnerDirective
+    MatBasicSpinnerDirective,
+    MatGlowDirective
   ]
 })
 export class NgxLoadingButtonsModule { }
