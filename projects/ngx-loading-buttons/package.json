@@ -18,5 +18,8 @@
   "ng-add": {
     "save": "dependencies"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/dkreider/ngx-loading-buttons"
+  }
 }
