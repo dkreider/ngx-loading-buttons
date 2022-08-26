@@ -1,22 +1,25 @@
 import {chain, Rule } from '@angular-devkit/schematics';
 import { getProjectFromWorkspace } from '@angular/cdk/schematics';
 import { getProjectTargetOptions } from '@angular/cdk/schematics';
-import { updateWorkspace} from '@schematics/angular/utility/workspace';
+import { updateWorkspace } from '@schematics/angular/utility/workspace';
+import { Schema } from './schema';
 
 const themePath = `./node_modules/ngx-loading-buttons/src/styles.css`;
 
-export function cssAdd (options: any): Rule {
+export default function (options: Schema): Rule {
   return async () => {
+    // const workspace = await getWorkspace(host);
+    // const project = getProjectFromWorkspace(workspace, options.project);
     return chain([
-        insertCSSDependency(options.project)
+        insertCSSDependency(options)
     ]);
   };
 }
 
-function insertCSSDependency(project: string): Rule {
+function insertCSSDependency(options: Schema): Rule {
     return chain([
-      addThemeStyleToTarget(project, 'build', themePath),
-      addThemeStyleToTarget(project, 'test', themePath),    
+      addThemeStyleToTarget(options.project, 'build', themePath),
+      addThemeStyleToTarget(options.project, 'test', themePath),    
     ]);
 }
   
