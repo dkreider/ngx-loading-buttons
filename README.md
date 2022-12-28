@@ -103,6 +103,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=dkreider" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/fwautriche"><img src="https://avatars.githubusercontent.com/u/3090227?v=4" width="100px;" alt=""/><br /><sub><b>Fabien Wautriche</b></sub></a><br />🐛</td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/tux1337"><img src="https://avatars.githubusercontent.com/u/33804893?v=4" width="100px;" alt=""/><br /><sub><b>tux1337</b></sub></a><br />🐛</td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
