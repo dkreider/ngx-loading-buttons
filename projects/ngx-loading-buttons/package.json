@@ -2,9 +2,9 @@
   "name": "ngx-loading-buttons",
   "version": "14.0.4",
   "peerDependencies": {
-    "@angular/common": "^14.1.3",
-    "@angular/core": "^14.1.3",
-    "@angular/cdk": "^14.1.3"
+    "@angular/common": "^15.0.3",
+    "@angular/core": "^15.0.3",
+    "@angular/cdk": "^15.0.3"
   },
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
