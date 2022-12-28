@@ -1,6 +1,6 @@
 {
   "name": "ngx-loading-buttons",
-  "version": "14.0.4",
+  "version": "15.0.0",
   "peerDependencies": {
     "@angular/common": "^15.0.3",
     "@angular/core": "^15.0.3",
