@@ -6,7 +6,7 @@
     to {transform: rotate(360deg);}
 }
 
-.mat-spinner:before {
+.mat-spinner::after {
     content: '';
     box-sizing: border-box;
     position: absolute;
