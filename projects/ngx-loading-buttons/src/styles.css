@@ -6,6 +6,16 @@
     to {transform: rotate(360deg);}
 }
 
+.mat-spinner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--spinner-overlay);
+  content: '';
+}
+
 .mat-spinner::after {
     content: '';
     box-sizing: border-box;
