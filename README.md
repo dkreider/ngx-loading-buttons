@@ -73,7 +73,7 @@ export class AppComponent {
 
   save(): void {
     this.saving = true;
-    // Juggle 5 hens while wiggling your toes and other magic...
+    // Juggle 5 hens while wiggling your toes and other magic... 🤡
   }
 
 
