@@ -205,8 +205,8 @@
     width: 490px;
   }
 
-  .example-button-row .mat-button-base {
-    margin: 8px 8px 8px 0;
+  .example-button-row button {
+    margin: 8px 8px 8px 24px;
   }
 
   .example-flex-container {
@@ -252,9 +252,43 @@
   <section>
     <div class="example-label">Spinner</div>
     <div class="example-button-row">
-      <button id="spinnerWithoutText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Button</button>
-      <button id="spinnerWithText" mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
-      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" color="secondary" [hideText]="true">Button</button>
+      <button id="spinnerWithoutText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Basic</button>
+      <button id="spinnerWithText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
+      <button id="spinnerWithText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" color="accent">Button</button>
+      <button id="spinnerWithText" mat-button (click)="this.click()" [mtBasicSpinner]="saving" color="warn">Button</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Spinner</div>
+    <div class="example-button-row">
+      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Basic</button>
+      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
+      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="accent">Button</button>
+      <button mat-raised-button (click)="this.click()" [mtBasicSpinner]="saving" color="warn">Button</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Spinner</div>
+    <div class="example-button-row">
+      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Basic</button>
+      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
+      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" color="accent">Button</button>
+      <button mat-stroked-button (click)="this.click()" [mtBasicSpinner]="saving" color="warn">Button</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+
+  <section>
+    <div class="example-label">Spinner</div>
+    <div class="example-button-row">
+      <button mat-flat-button (click)="this.click()" [mtBasicSpinner]="saving" [hideText]="true">Basic</button>
+      <button mat-flat-button (click)="this.click()" [mtBasicSpinner]="saving" color="primary">Button</button>
+      <button mat-flat-button (click)="this.click()" [mtBasicSpinner]="saving" color="accent">Button</button>
+      <button mat-flat-button (click)="this.click()" [mtBasicSpinner]="saving" color="warn">Button</button>
     </div>
   </section>
   <mat-divider></mat-divider>
