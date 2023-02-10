@@ -15,10 +15,4 @@ export class MatBasicSpinnerDirective {
 
   @HostBinding('class.hide-btn-text')
   textHidden = false
-
-  @HostBinding('disabled')
-  get disabled(): boolean {
-    return this.mtBasicSpinner;
-  }
-
 }
