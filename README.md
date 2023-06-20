@@ -73,7 +73,7 @@ export class AppComponent {
 
   save(): void {
     this.saving = true;
-    // Juggle 5 hens while wiggling your toes and other magic...
+    // Juggle 5 hens while wiggling your toes and other magic... 🤡
   }
 
 
@@ -102,12 +102,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=dkreider" title="Code">💻</a></td>
-  </tr>
-  <tr>
+    <td align="center"><a href="https://megaphone.info/"><img src="https://avatars.githubusercontent.com/u/44493964?v=4" width="100px;" alt=""/><br /><sub><b>Raphaël Balet </b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=rbalet" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/fwautriche"><img src="https://avatars.githubusercontent.com/u/3090227?v=4" width="100px;" alt=""/><br /><sub><b>Fabien Wautriche</b></sub></a><br />🐛</td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/tux1337"><img src="https://avatars.githubusercontent.com/u/33804893?v=4" width="100px;" alt=""/><br /><sub><b>tux1337</b></sub></a><br />🐛</td>
+    <td align="center"><a href="https://github.com/tux1337"><img src="https://avatars.githubusercontent.com/u/33804893?v=4" width="100px;" alt=""/><br /><sub><b>tux1337</b></sub></a><br />🐛</td>    
+    <td align="center"><a href="https://github.com/MilanNemeth"><img src="https://avatars.githubusercontent.com/u/63391662?v=4" width="100px;" alt=""/><br /><sub><b>Milán Németh </b></sub></a><br />🐛</td>    
+    <td align="center"><a href="https://github.com/Deewens"><img src="https://avatars.githubusercontent.com/u/26287270?v=4" width="100px;" alt=""/><br /><sub><b>Adrien</b></sub></a><br />🐛</td>    
   </tr>
 </table>
 

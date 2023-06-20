@@ -4,20 +4,17 @@ import { Directive, HostBinding, Input } from '@angular/core';
   selector: '[mtBasicSpinner]'
 })
 export class MatBasicSpinnerDirective {
-
-  @Input() mtBasicSpinner = false;
-  @Input() hideText = false;
-
-  @Input("class")  
-  @HostBinding('class')
-  get elementClass(): string {
-    if (this.mtBasicSpinner && this.hideText) {
-      return 'mat-spinner hide-btn-text';
-    } else if (this.mtBasicSpinner) {
-      return 'mat-spinner';
-    }
-    return '';
+  @Input() hideText = false
+  @Input() set mtBasicSpinner(loading: boolean) {
+    this.loading = loading
+    if (this.hideText) this.textHidden = loading
   }
+
+  @HostBinding('class.mat-spinner')
+  loading = false
+
+  @HostBinding('class.hide-btn-text')
+  textHidden = false
 
   @HostBinding('disabled')
   get disabled(): boolean {
