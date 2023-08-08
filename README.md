@@ -4,9 +4,13 @@
 
 <br />
 
+![npm](https://img.shields.io/npm/dt/ngx-loading-buttons)
+![npm](https://img.shields.io/npm/dm/ngx-loading-buttons)
+[![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/ngx-loading-buttons)](https://bundlephobia.com/result?p=ngx-loading-button)
 [![ngx-loading-buttons](https://github.com/dkreider/ngx-loading-buttons/workflows/ngx-loading-buttons/badge.svg)](https://github.com/dkreider/ngx-loading-buttons/actions/workflows/main.yml)
 [![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]()
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)](https://github.com/dkreider/ngx-loading-buttons/blob/main/LICENSE)
 
 
 A lightweight Angular library to add a loading spinner to your [Angular Material](https://material.angular.io) buttons. 
