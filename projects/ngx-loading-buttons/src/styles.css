@@ -6,6 +6,11 @@
     to {transform: rotate(360deg);}
 }
 
+.mat-spinner .mdc-button__label {
+  transition: opacity 0.3s ease-in-out;
+  opacity: var(--spinner-opacity, 0.2);
+}
+
 .mat-spinner::after {
     content: '';
     box-sizing: border-box;
