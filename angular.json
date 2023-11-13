@@ -100,10 +100,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-loading-buttons-playground:build:production"
+              "buildTarget": "ngx-loading-buttons-playground:build:production"
             },
             "development": {
-              "browserTarget": "ngx-loading-buttons-playground:build:development"
+              "buildTarget": "ngx-loading-buttons-playground:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -111,7 +111,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-loading-buttons-playground:build"
+            "buildTarget": "ngx-loading-buttons-playground:build"
           }
         },
         "test": {
