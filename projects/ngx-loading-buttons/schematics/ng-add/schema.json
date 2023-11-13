@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "ngx-loading-buttongs-ng-add",
+    "$id": "ngx-loading-buttons-ng-add",
     "title": "ngx-loading-buttons ng-add schematic",
     "type": "object",
     "properties": {

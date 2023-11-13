@@ -26,7 +26,7 @@ ng add ngx-loading-buttons
 
 ## Usage
 
-Import the `NgxPagememoryModule` into your `AppModule`. You can configure it as shown below:
+Import the `NgxLoadingButtonsModule` into your `AppModule`. You can configure it as shown below:
 
 ```ts
 import { NgModule } from '@angular/core';
@@ -105,8 +105,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=dkreider" title="Code">💻</a></td>
-    <td align="center"><a href="https://megaphone.info/"><img src="https://avatars.githubusercontent.com/u/44493964?v=4" width="100px;" alt=""/><br /><sub><b>Raphaël Balet </b></sub></a><br /><a href="https://github.com/dkreider/ngx-pagememory/commits?author=rbalet" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=dkreider" title="Code">💻</a></td>
+    <td align="center"><a href="https://megaphone.info/"><img src="https://avatars.githubusercontent.com/u/44493964?v=4" width="100px;" alt=""/><br /><sub><b>Raphaël Balet </b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=rbalet" title="Code">💻</a></td>
+     <td align="center"><a href="https://damingerdai.github.io/"><img src="https://avatars.githubusercontent.com/u/16384908?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Ming </b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=damingerdai" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/fwautriche"><img src="https://avatars.githubusercontent.com/u/3090227?v=4" width="100px;" alt=""/><br /><sub><b>Fabien Wautriche</b></sub></a><br />🐛</td>
     <td align="center"><a href="https://github.com/tux1337"><img src="https://avatars.githubusercontent.com/u/33804893?v=4" width="100px;" alt=""/><br /><sub><b>tux1337</b></sub></a><br />🐛</td>    
     <td align="center"><a href="https://github.com/MilanNemeth"><img src="https://avatars.githubusercontent.com/u/63391662?v=4" width="100px;" alt=""/><br /><sub><b>Milán Németh </b></sub></a><br />🐛</td>    
