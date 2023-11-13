@@ -1,0 +1,46 @@
+name: NPM Publish
+
+env:
+  NODE_VERSION: 18
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build-lib:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{env.NODE_VERSION}}
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+  publish-npm:
+    needs: build-lib
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{env.NODE_VERSION}}
+          registry-url: https://registry.npmjs.org/
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - run: npm publish dist/ngx-loading-buttons/ --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
