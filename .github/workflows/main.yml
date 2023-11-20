@@ -42,6 +42,3 @@ jobs:
 
       - name: Build library
         run: npm run build:ngx-loading-buttons
-
-      - name: Build playground
-        run: npm run build
