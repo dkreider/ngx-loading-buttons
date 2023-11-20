@@ -3,9 +3,9 @@ import { MatBasicSpinnerDirective } from './mat-basic-spinner.directive';
 import { MatGlowDirective } from './mat-glow/mat-glow.directive';
 
 @NgModule({
-  declarations: [
-    MatBasicSpinnerDirective,
-    MatGlowDirective
+  imports: [
+    MatGlowDirective,
+    MatBasicSpinnerDirective
   ],
   exports: [
     MatBasicSpinnerDirective,

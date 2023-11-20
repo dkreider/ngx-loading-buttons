@@ -8,7 +8,10 @@ describe('MatBasicSpinnerDirective', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [AppComponent, MatBasicSpinnerDirective]
+      imports: [
+        MatBasicSpinnerDirective
+      ],
+      declarations: [AppComponent]
     })
     .createComponent(AppComponent);
 

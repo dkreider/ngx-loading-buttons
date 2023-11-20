@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build ngx-loading-buttons-playground",
     "build:ngx-loading-buttons": "ng-packagr -p projects/ngx-loading-buttons/ng-package.json && cd projects/ngx-loading-buttons && npm run build",
     "test:ngx-loading-buttons": "ng test ngx-loading-buttons",
     "watch": "ng build --watch --configuration development"
