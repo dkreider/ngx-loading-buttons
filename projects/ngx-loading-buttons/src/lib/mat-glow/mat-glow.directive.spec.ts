@@ -3,12 +3,15 @@ import { AppComponent } from 'projects/ngx-loading-buttons-playground/src/app/ap
 import { MatGlowDirective } from './mat-glow.directive';
 
 describe('MatGlowDirective', () => {
-  
+
   let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [AppComponent, MatGlowDirective]
+      imports: [
+        MatGlowDirective
+      ],
+      declarations: [AppComponent]
     })
     .createComponent(AppComponent);
 

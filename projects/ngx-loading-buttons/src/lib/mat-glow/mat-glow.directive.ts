@@ -1,7 +1,8 @@
 import { Directive, HostBinding, Input } from '@angular/core';
 
 @Directive({
-  selector: '[mtGlow]'
+  selector: '[mtGlow]',
+  standalone: true,
 })
 export class MatGlowDirective {
 
@@ -9,7 +10,7 @@ export class MatGlowDirective {
   @Input() mtGlow = false;
   @Input() hideText = false;
 
-  @Input("class")  
+  @Input("class")
   @HostBinding('class')
   get elementClass(): string {
     document.documentElement.style.setProperty('--glow-color', this.glowColor);
