@@ -19,7 +19,8 @@ describe('MatBasicSpinnerDirective', () => {
   })
 
   it('should create an instance', () => {
-    const directive = new MatBasicSpinnerDirective();
+    var element = fixture.debugElement;
+    const directive = new MatBasicSpinnerDirective(element);
     expect(directive).toBeTruthy();
   });
 
@@ -27,16 +28,18 @@ describe('MatBasicSpinnerDirective', () => {
     fixture.componentInstance.saving = true;
     fixture.detectChanges();
 
-    var element: HTMLElement = fixture.nativeElement.querySelector("#spinnerWithText");
+    var element: HTMLButtonElement = fixture.nativeElement.querySelector("#spinnerWithText");
     expect(element.className).toEqual("mat-spinner");
+    expect(element.disabled).toEqual(true);
   });
 
   it('should show spinner and hide text when loading is true', () => {
     fixture.componentInstance.saving = true;
     fixture.detectChanges();
 
-    var element: HTMLElement = fixture.nativeElement.querySelector("#spinnerWithoutText");
+    var element: HTMLButtonElement = fixture.nativeElement.querySelector("#spinnerWithoutText");
     expect(element.className).toContain("mat-spinner");
+    expect(element.disabled).toEqual(true);
     expect(element.className).toContain("hide-btn-text");
   });
 
