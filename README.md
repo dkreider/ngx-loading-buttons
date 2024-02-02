@@ -90,6 +90,12 @@ And our template file.
 <button mat-raised-button [mtBasicSpinner]="saving" (click)="save()">Basic</button>
 ```
 
+Add our styles to yours
+
+```scss
+@import 'ngx-loading-buttons/styles';
+```
+
 ## Issues 🐛
 
 Found a bug? Want to request a feature? Confused? Or wanna simply comment on how useful this library is? 
