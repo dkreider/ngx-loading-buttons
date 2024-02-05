@@ -21,5 +21,12 @@
   "license": "MIT",
   "repository": {
     "url": "https://github.com/dkreider/ngx-loading-buttons"
+  },
+  "files": [
+    "styles.css"
+  ],
+  "exports": {
+    "./styles": "./styles.css",
+    "./styles.css": "./styles.css"
   }
 }
