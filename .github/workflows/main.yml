@@ -26,9 +26,9 @@ jobs:
           key: ${{ runner.os }}-v1-npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: ${{ runner.os }}-v1-npm
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: latest
 
       - name: Install dependencies
         # If checksum for the `package-lock.json` hasn't changed then we shouldn't run
