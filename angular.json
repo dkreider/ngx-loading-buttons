@@ -46,12 +46,15 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngx-loading-buttons-playground",
+            "outputPath": {
+              "base": "dist/ngx-loading-buttons-playground"
+            },
             "index": "projects/ngx-loading-buttons-playground/src/index.html",
-            "main": "projects/ngx-loading-buttons-playground/src/main.ts",
-            "polyfills": "projects/ngx-loading-buttons-playground/src/polyfills.ts",
+            "polyfills": [
+              "projects/ngx-loading-buttons-playground/src/polyfills.ts"
+            ],
             "tsConfig": "projects/ngx-loading-buttons-playground/tsconfig.app.json",
             "assets": [
               "projects/ngx-loading-buttons-playground/src/favicon.ico",
@@ -61,7 +64,8 @@
               "projects/ngx-loading-buttons-playground/src/styles.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "browser": "projects/ngx-loading-buttons-playground/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -86,9 +90,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
