@@ -1,6 +1,6 @@
 {
   "name": "ngx-loading-buttons",
-  "version": "18.0.0",
+  "version": "18.0.1",
   "peerDependencies": {
     "@angular/common": "^18.0.0",
     "@angular/core": "^18.0.0",
@@ -22,11 +22,8 @@
   "repository": {
     "url": "https://github.com/dkreider/ngx-loading-buttons"
   },
-  "files": [
-    "styles.css"
-  ],
   "exports": {
-    "./styles": "./styles.css",
-    "./styles.css": "./styles.css"
+    "./styles": "./src/styles.css",
+    "./styles.css": "./src/styles.css"
   }
 }
