@@ -90,6 +90,12 @@ And our template file.
 <button mat-raised-button [mtBasicSpinner]="saving" (click)="save()">Basic</button>
 ```
 
+Add our styles to yours
+
+```scss
+@import 'ngx-loading-buttons/styles';
+```
+
 ## Issues 🐛
 
 Found a bug? Want to request a feature? Confused? Or wanna simply comment on how useful this library is? 
@@ -106,6 +112,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://www.danielk.tech/"><img src="https://avatars.githubusercontent.com/u/11043868?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Kreider</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=dkreider" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Totto16"><img src="https://avatars.githubusercontent.com/u/32566573?v=4" width="100px;" alt=""/><br /><sub><b>Totto</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=Totto16" title="Code">💻</a></td>
     <td align="center"><a href="https://megaphone.info/"><img src="https://avatars.githubusercontent.com/u/44493964?v=4" width="100px;" alt=""/><br /><sub><b>Raphaël Balet</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=rbalet" title="Code">💻</a></td>
      <td align="center"><a href="https://damingerdai.github.io/"><img src="https://avatars.githubusercontent.com/u/16384908?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Ming</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=damingerdai" title="Code">💻</a></td>
      <td align="center"><a href="https://www.bolzplatzarena.net/"><img src="https://avatars.githubusercontent.com/u/6323357?v=4" width="100px;" alt=""/><br /><sub><b>Thomas Renger</b></sub></a><br /><a href="https://github.com/dkreider/ngx-loading-buttons/commits?author=rengert" title="Code">💻</a></td>
