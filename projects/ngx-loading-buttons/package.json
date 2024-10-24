@@ -23,7 +23,7 @@
     "url": "https://github.com/dkreider/ngx-loading-buttons"
   },
   "exports": {
-    "./styles": "./styles.css",
-    "./styles.css": "./styles.css"
+    "./styles": "./src/styles.css",
+    "./styles.css": "./src/styles.css"
   }
 }
