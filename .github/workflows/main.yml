@@ -28,7 +28,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: latest
+          node-version: lts/*
 
       - name: Install dependencies
         # If checksum for the `package-lock.json` hasn't changed then we shouldn't run
