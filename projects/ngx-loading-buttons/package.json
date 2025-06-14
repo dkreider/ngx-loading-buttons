@@ -6,6 +6,9 @@
     "@angular/core": "^20.0.0",
     "@angular/cdk": "^20.0.0"
   },
+  "engines":{
+    "node": "^20.11.1 || ^22.10.0"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
     "postbuild": "copyfiles schematics/*/schema.json schematics/*/files/** schematics/collection.json ../../dist/ngx-loading-buttons/"
