@@ -13,9 +13,9 @@ jobs:
       fail-fast: true
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/cache@v1
+      - uses: actions/cache@v4
         id: npm-cache
         with:
           # We also specify `~/.cache` because Cypress binary is installed
